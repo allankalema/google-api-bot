@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>Uganda Financial Advisor Bot</title>
+</head>
+<body>
+  <h2>Ask a Financial Question (Uganda)</h2>
+  <form method="POST">
+    <textarea name="query" rows="4" cols="60" placeholder="Type your question..."></textarea><br>
+    <button type="submit">Ask</button>
+  </form>
+  {% if response %}
+    <h3>Response:</h3>
+    <p>{{ response }}</p>
+  {% endif %}
+</body>
+</html>
